@@ -4,14 +4,19 @@ function Counter() {
 
   const [counter, setCounter] = useState(0);
 
-  const changeCounter = () =>{
+  const increaseCounter = () =>{
     setCounter(counter + 1)
+  }
+
+  const reduceCounter = () =>{
+    setCounter(counter - 1)
   }
 
   return (
     <div className="app">
       <p>{counter}</p>
-      <button onClick={changeCounter}>Change Counter</button>
+      <button onClick={increaseCounter}>Add Counter</button>
+      <button onClick={reduceCounter}>Reduce Counter</button>
     </div>
   )
 }
