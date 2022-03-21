@@ -1,8 +1,15 @@
-import React, { useState } from 'react'
+// COUNTER APP USING REACT HOOKS
+
+import React, { useState, useEffect } from 'react'
 
 function Counter() {
 
   const [counter, setCounter] = useState(0);
+
+  // useEffect hook
+  useEffect(() => {
+   document.title = `You have clicked the counter ${counter} times`
+  })
 
   const increaseCounter = () =>{
     setCounter(counter + 1)
