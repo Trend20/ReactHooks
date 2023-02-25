@@ -1,7 +1,8 @@
-import React from 'react'
-import Counter from './components/Counter';
-import Hooks from './components/Hooks';
-import './App.css';
+import React from "react";
+import Counter from "./components/Counter";
+import Hooks from "./components/Hooks";
+import "./App.css";
+import HooksCounterTwo from "./components/HooksCounterTwo";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <h1>React Hooks</h1>
       {/* <Counter /> */}
       <Hooks />
+      <HooksCounterTwo />
     </div>
   );
 }
